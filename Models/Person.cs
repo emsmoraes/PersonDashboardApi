@@ -9,4 +9,14 @@ public class Person
 
     public Guid Id { get; init; }
     public string Name { get; private set; }
+
+    public void ChangeName(string name)
+    {
+        Name = name;
+    }
+
+    public void DisablePerson()
+    {
+        Name = "desativado";
+    }
 }
